@@ -13,6 +13,7 @@
             padding: 0;
             background: linear-gradient(to bottom right, #f1f8e9, #a5d6a7); /* Soft green gradient background */
             color: #333;
+            overflow-x: hidden;
         }
 
         /* Header Styling */
@@ -22,6 +23,8 @@
             padding: 30px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
         }
 
         header img {
@@ -35,6 +38,30 @@
             font-weight: bold;
         }
 
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #004d40;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         /* Section Styling */
         .section {
             padding: 60px 20px;
@@ -43,6 +70,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
             border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
         }
 
         .section h2 {
@@ -89,7 +117,7 @@
             margin-top: 10px;
         }
 
-        /* Footer Styling */
+        /* Footer Section */
         footer {
             background-color: #00796b;
             color: white;
@@ -100,6 +128,24 @@
         footer p {
             margin: 0;
             font-size: 14px;
+        }
+
+        /* Dynamic Background Styling */
+        .dynamic-background {
+            background: url('https://source.unsplash.com/1600x900/?education') center center no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+
+        .dynamic-background h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         /* Media Query for Smaller Screens */
@@ -113,14 +159,27 @@
 </head>
 <body>
 
+<!-- Navigation Bar -->
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#career">Career</a>
+    <a href="#donate">Donations</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
 <!-- Header Section -->
 <header>
     <img src="https://raw.githubusercontent.com/arafey39/Saleeaka-website-proposal/main/SaleekaFoundation_Logo1_Green.png" alt="Saleeka Foundation Logo">
     <h1>Saleeka Foundation</h1>
 </header>
 
+<!-- Dynamic Background Section -->
+<section class="dynamic-background">
+    <h2>Empowering Education for All</h2>
+</section>
+
 <!-- Mission Section -->
-<section class="section">
+<section class="section" id="about">
     <h2>Our Mission</h2>
     <p>At Saleeka Foundation, we are committed to providing educational resources and support to underprivileged communities, enabling individuals to achieve their full potential. We aim to empower the next generation through accessible learning, skills training, and community outreach programs.</p>
 </section>
