@@ -11,36 +11,32 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #f1f8e9, #a5d6a7); /* Soft green gradient background */
+            background-color: #f4f4f4;
             color: #333;
             overflow-x: hidden;
         }
 
-        /* Header Styling */
-        header {
-            background-color: #00796b;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Full-Width Background */
+        .hero {
             position: relative;
-            z-index: 10;
+            background: url('https://source.unsplash.com/1600x900/?education') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            text-align: center;
         }
 
-        header img {
-            width: 150px;
-            height: auto;
-        }
-
-        header h1 {
-            font-size: 40px;
-            margin-top: 15px;
+        .hero h1 {
+            font-size: 50px;
             font-weight: bold;
         }
 
-        /* Navigation Bar Styling */
+        /* Navigation Bar */
         nav {
-            background-color: #004d40;
+            background-color: #00796b;
             text-align: center;
             padding: 15px;
             position: fixed;
@@ -63,24 +59,24 @@
         }
 
         /* Section Styling */
-        .section {
+        section {
             padding: 60px 20px;
             text-align: center;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
         }
 
-        .section h2 {
+        section h2 {
             color: #00796b;
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .section p {
+        section p {
             font-size: 18px;
             line-height: 1.8;
             color: #555;
@@ -92,22 +88,23 @@
         .programs {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
+            gap: 30px;
+            flex-wrap: wrap;
         }
 
         .programs .program {
             background-color: #e0f2f1;
             border-radius: 10px;
             padding: 30px;
-            width: 300px;
+            width: 250px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
 
         .programs .program h3 {
             color: #00796b;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
         }
 
@@ -130,29 +127,24 @@
             font-size: 14px;
         }
 
-        /* Dynamic Background Styling */
-        .dynamic-background {
-            background: url('https://source.unsplash.com/1600x900/?education') center center no-repeat;
-            background-size: cover;
-            height: 400px;
-            position: relative;
-        }
-
-        .dynamic-background h2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 36px;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        /* Hover Effects */
+        section:hover {
+            transform: translateY(-10px);
         }
 
         /* Media Query for Smaller Screens */
         @media (max-width: 768px) {
+            nav a {
+                margin: 0 10px;
+            }
+
             .programs {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
             }
         }
     </style>
@@ -167,31 +159,25 @@
     <a href="#contact">Contact Us</a>
 </nav>
 
-<!-- Header Section -->
-<header>
-    <img src="https://raw.githubusercontent.com/arafey39/Saleeaka-website-proposal/main/SaleekaFoundation_Logo1_Green.png" alt="Saleeka Foundation Logo">
+<!-- Hero Section with Background Image -->
+<div class="hero">
     <h1>Saleeka Foundation</h1>
-</header>
-
-<!-- Dynamic Background Section -->
-<section class="dynamic-background">
-    <h2>Empowering Education for All</h2>
-</section>
+</div>
 
 <!-- Mission Section -->
-<section class="section" id="about">
+<section id="about">
     <h2>Our Mission</h2>
-    <p>At Saleeka Foundation, we are committed to providing educational resources and support to underprivileged communities, enabling individuals to achieve their full potential. We aim to empower the next generation through accessible learning, skills training, and community outreach programs.</p>
+    <p>At Saleeka Foundation, we provide educational resources and support to underprivileged communities. Our goal is to empower individuals to reach their full potential through accessible learning, skills training, and community outreach.</p>
 </section>
 
 <!-- About Us Section -->
-<section class="section">
+<section>
     <h2>About Us</h2>
-    <p>Saleeka Foundation is dedicated to creating opportunities for youth to succeed academically and professionally. We focus on improving education standards, offering scholarships, and equipping individuals with the necessary skills for a successful future. Our vision is to help transform lives through the power of education.</p>
+    <p>Saleeka Foundation is committed to improving educational standards and creating opportunities for youth to succeed academically and professionally. We offer scholarships, skills training, and programs designed to help individuals build the skills they need for a successful career.</p>
 </section>
 
 <!-- Programs Section -->
-<section class="section">
+<section>
     <h2>Our Programs</h2>
     <div class="programs">
         <div class="program">
@@ -200,13 +186,34 @@
         </div>
         <div class="program">
             <h3>Skills Training</h3>
-            <p>Our programs equip individuals with the skills they need for a thriving career in today's competitive job market.</p>
+            <p>Our programs equip individuals with the skills they need to thrive in today's competitive job market.</p>
         </div>
         <div class="program">
             <h3>Community Outreach</h3>
-            <p>We focus on strengthening communities by offering workshops and programs that promote personal growth and social responsibility.</p>
+            <p>We strengthen communities by offering workshops and programs that promote personal growth and social responsibility.</p>
         </div>
     </div>
+</section>
+
+<!-- Donations Section -->
+<section id="donate">
+    <h2>Make a Donation</h2>
+    <p>Your generous contributions help us provide scholarships and support educational programs for underprivileged communities. Together, we can create lasting change.</p>
+    <button onclick="window.location.href='https://www.paypal.com/donate'">Donate Now</button>
+</section>
+
+<!-- Career Section -->
+<section id="career">
+    <h2>Join Our Team</h2>
+    <p>At Saleeka Foundation, we are always looking for passionate individuals to help us achieve our mission. Explore our open positions and become part of our team today!</p>
+    <button onclick="window.location.href='career-page.html'">View Career Opportunities</button>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to learn more about our programs, feel free to get in touch with us. We’d love to hear from you!</p>
+    <button onclick="window.location.href='contact-page.html'">Contact Us</button>
 </section>
 
 <!-- Footer Section -->
