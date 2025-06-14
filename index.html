@@ -6,97 +6,151 @@
     <title>Saleeka Foundation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #fafafa;
+            color: #333;
         }
+
+        /* Header Styling */
         header {
-            background-color: #0d7f0f;
+            background-color: #00796b;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #00796b;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Programs Section */
+        .programs {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .programs .program {
+            background-color: #e0f2f1;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .programs .program h3 {
+            color: #00796b;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .programs .program p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #00796b;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
-        header img {
-            width: 100px;
-            height: auto;
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
-        header h1 {
-            font-size: 36px;
-            margin-top: 10px;
-        }
-        .section {
-            padding: 50px;
-            text-align: center;
-        }
-        .section h2 {
-            color: #333;
-        }
-        .section p {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: auto;
-        }
-        .programs {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-        .programs .program {
-            background-color: #e7f7e5;
-            border-radius: 10px;
-            padding: 30px;
-            width: 250px;
-            text-align: center;
-        }
-        .programs .program h3 {
-            color: #0d7f0f;
-            font-size: 24px;
-        }
-        .footer {
-            background-color: #0d7f0f;
-            color: white;
-            padding: 20px;
-            text-align: center;
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 768px) {
+            .programs {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
+<!-- Header Section -->
 <header>
     <img src="/path/to/your/logo.png" alt="Saleeka Foundation Logo">
     <h1>Saleeka Foundation</h1>
 </header>
 
+<!-- Mission Section -->
 <section class="section">
     <h2>Our Mission</h2>
     <p>At Saleeka Foundation, we are committed to providing educational resources and support to underprivileged communities, enabling individuals to achieve their full potential. We aim to empower the next generation through accessible learning, skills training, and community outreach programs.</p>
 </section>
 
+<!-- About Us Section -->
 <section class="section">
     <h2>About Us</h2>
     <p>Saleeka Foundation is dedicated to creating opportunities for youth to succeed academically and professionally. We focus on improving education standards, offering scholarships, and equipping individuals with the necessary skills for a successful future. Our vision is to help transform lives through the power of education.</p>
 </section>
 
-<section class="section programs">
-    <div class="program">
-        <h3>Educational Grants</h3>
-        <p>We provide financial support to deserving students, helping them pursue higher education and fulfill their dreams.</p>
-    </div>
-    <div class="program">
-        <h3>Skills Training</h3>
-        <p>Our programs equip individuals with the skills they need for a thriving career in today's competitive job market.</p>
-    </div>
-    <div class="program">
-        <h3>Community Outreach</h3>
-        <p>We focus on strengthening communities by offering workshops and programs that promote personal growth and social responsibility.</p>
+<!-- Programs Section -->
+<section class="section">
+    <h2>Our Programs</h2>
+    <div class="programs">
+        <div class="program">
+            <h3>Educational Grants</h3>
+            <p>We provide financial support to deserving students, helping them pursue higher education and fulfill their dreams.</p>
+        </div>
+        <div class="program">
+            <h3>Skills Training</h3>
+            <p>Our programs equip individuals with the skills they need for a thriving career in today's competitive job market.</p>
+        </div>
+        <div class="program">
+            <h3>Community Outreach</h3>
+            <p>We focus on strengthening communities by offering workshops and programs that promote personal growth and social responsibility.</p>
+        </div>
     </div>
 </section>
 
-<footer class="footer">
+<!-- Footer Section -->
+<footer>
     <p>&copy; 2025 Saleeka Foundation. All rights reserved.</p>
 </footer>
 
