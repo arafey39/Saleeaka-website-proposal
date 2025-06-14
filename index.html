@@ -30,7 +30,7 @@
         }
 
         .hero h1 {
-            font-size: 60px;
+            font-size: 50px;
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -77,6 +77,28 @@
 
         nav a:hover {
             text-decoration: underline;
+        }
+
+        /* Header - Logo & Name */
+        .header-logo {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .header-logo img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .header-logo h1 {
+            font-size: 24px;
+            color: white;
+            margin: 0;
         }
 
         /* Section Styling */
@@ -182,68 +204,10 @@
 
 <!-- Hero Section with Background Image -->
 <div class="hero">
-    <img src="https://raw.githubusercontent.com/arafey39/Saleeaka-website-proposal/main/saleeka%20logo.png" alt="Saleeka Foundation Logo" style="width: 150px; height: auto;">
-    <h1>Saleeka Foundation</h1>
-    <p>Empowering Education for All</p>
-    <a href="#about" class="btn">Learn More</a>
-</div>
-
-<!-- Mission Section -->
-<section id="about">
-    <h2>Our Mission</h2>
-    <p>At Saleeka Foundation, we provide educational resources and support to underprivileged communities. Our goal is to empower individuals to reach their full potential through accessible learning, skills training, and community outreach.</p>
-</section>
-
-<!-- About Us Section -->
-<section>
-    <h2>About Us</h2>
-    <p>Saleeka Foundation is committed to improving educational standards and creating opportunities for youth to succeed academically and professionally. We offer scholarships, skills training, and programs designed to help individuals build the skills they need for a successful career.</p>
-</section>
-
-<!-- Programs Section -->
-<section>
-    <h2>Our Programs</h2>
-    <div class="programs">
-        <div class="program">
-            <h3>Educational Grants</h3>
-            <p>We provide financial support to deserving students, helping them pursue higher education and fulfill their dreams.</p>
-        </div>
-        <div class="program">
-            <h3>Skills Training</h3>
-            <p>Our programs equip individuals with the skills they need to thrive in today's competitive job market.</p>
-        </div>
-        <div class="program">
-            <h3>Community Outreach</h3>
-            <p>We strengthen communities by offering workshops and programs that promote personal growth and social responsibility.</p>
-        </div>
+    <!-- Logo and Name positioned at the top right -->
+    <div class="header-logo">
+        <img src="https://raw.githubusercontent.com/arafey39/Saleeaka-website-proposal/main/saleeka%20logo.png" alt="Saleeka Foundation Logo">
+        <h1>Saleeka Foundation</h1>
     </div>
-</section>
-
-<!-- Donations Section -->
-<section id="donate">
-    <h2>Make a Donation</h2>
-    <p>Your generous contributions help us provide scholarships and support educational programs for underprivileged communities. Together, we can create lasting change.</p>
-    <button onclick="window.location.href='https://www.paypal.com/donate'">Donate Now</button>
-</section>
-
-<!-- Career Section -->
-<section id="career">
-    <h2>Join Our Team</h2>
-    <p>At Saleeka Foundation, we are always looking for passionate individuals to help us achieve our mission. Explore our open positions and become part of our team today!</p>
-    <button onclick="window.location.href='career-page.html'">View Career Opportunities</button>
-</section>
-
-<!-- Contact Us Section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to learn more about our programs, feel free to get in touch with us. We’d love to hear from you!</p>
-    <button onclick="window.location.href='contact-page.html'">Contact Us</button>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 Saleeka Foundation. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+    <h1>Empowering Education for All</h1>
+    <p>Join us in our mission to make education accessible to all communities.</p>
