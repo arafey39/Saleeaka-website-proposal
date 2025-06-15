@@ -79,27 +79,17 @@
             text-decoration: underline;
         }
 
-        /* Header - Logo & Company Name in the Top Left Corner */
+        /* Header - Logo */
         .header-logo {
             position: absolute;
             top: 20px;
             left: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             z-index: 200;
         }
 
         .header-logo img {
             width: 150px;
             height: auto;
-            margin-bottom: 10px;
-        }
-
-        .header-logo h1 {
-            font-size: 24px;
-            color: white;
-            margin: 0;
         }
 
         /* Section Styling */
@@ -141,135 +131,3 @@
             border-radius: 10px;
             padding: 30px;
             width: 250px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-
-        .programs .program h3 {
-            color: #00796b;
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        .programs .program p {
-            font-size: 16px;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        /* Footer Section */
-        footer {
-            background-color: #00796b;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        /* Hover Effects */
-        section:hover {
-            transform: translateY(-10px);
-        }
-
-        /* Media Query for Smaller Screens */
-        @media (max-width: 768px) {
-            nav a {
-                margin: 0 10px;
-            }
-
-            .programs {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<!-- Header with Logo & Navigation Links -->
-<header>
-    <div class="header-logo">
-        <img src="https://raw.githubusercontent.com/arafey39/Saleeaka-website-proposal/main/saleeka%20logo.png" alt="Saleeka Foundation Logo">
-        <h1>Saleeka Foundation</h1>
-    </div>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#career">Career</a>
-        <a href="#donate">Donations</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-</header>
-
-<!-- Hero Section with Background Image -->
-<div class="hero">
-    <h1>Saleeka Foundation</h1>
-</div>
-
-<!-- Mission Section -->
-<section id="about">
-    <h2>Our Mission</h2>
-    <p>A world where every student, regardless of background, can discover their unique path and be supported in realizing their full potential—the Saleeka way.</p>
-</section>
-
-<!-- About Us Section -->
-<section>
-    <h2>About Us</h2>
-    <p>At Saleeka Foundation, we provide a platform where students from all walks of life can work on real-life projects to enhance their knowledge and skills. Our platform allows students to connect with professionals who can guide them, helping them grow both personally and professionally.</p>
-</section>
-
-<!-- Programs Section -->
-<section>
-    <h2>Our Programs</h2>
-    <div class="programs">
-        <div class="program">
-            <h3>Real World Projects</h3>
-            <p>At Saleeka, you'll have the opportunity to work on real-world projects, allowing you to develop skills that will support your career growth.</p>
-        </div>
-        <div class="program">
-            <h3>Skills Training</h3>
-            <p>At Saleeka, you can connect with professionals who will mentor you in tackling real-world challenges and provide the confidence needed to handle practical projects</p>
-        </div>
-        <div class="program">
-            <h3>Community Outreach</h3>
-            <p>We strengthen communities by offering workshops and programs that promote personal growth and social responsibility.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Donations Section -->
-<section id="donate">
-    <h2>Make a Donation</h2>
-    <p>Saleeka is a non-profit organization, so every donation you make helps more students gain real-world skills, boosting their confidence to solve problems and secure jobs in today’s competitive job market.</p>
-    <button onclick="window.location.href='https://www.paypal.com/donate'">Donate Now</button>
-</section>
-
-<!-- Career Section -->
-<section id="career">
-    <h2>Join Our Team</h2>
-    <p>At Saleeka Foundation, we are always looking for passionate individuals to help us achieve our mission. Explore our open positions and become part of our team today!</p>
-    <button onclick="window.location.href='career-page.html'">View Career Opportunities</button>
-</section>
-
-<!-- Contact Us Section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to learn more about our programs, feel free to get in touch with us. We’d love to hear from you!</p>
-    <button onclick="window.location.href='contact-page.html'">Contact Us</button>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 Saleeka Foundation. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
